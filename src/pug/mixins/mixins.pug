@@ -1,0 +1,25 @@
+mixin category-card(img="categoria1.jpg", name="Escritorios", link="#")
+   img.d-block.img-fluid.mx-auto(src=`assets/img/${img}`, alt="")
+   a.link.d-block.text-center.mt-4(href=link) #{name}
+
+mixin product-card-sm(img="producto1.jpg", title="Titulo", price="1,000.00", link="#")
+   img.img-fluid(src=`assets/img/${img}`, alt="")
+   .info.p-4.bg-primary
+      h3.heading.mb-3 #{title}
+      if block 
+         block
+      else 
+         p.desc SIN DESCRIPCION
+      p.price.font-weight-bold #{price}
+      a.btn.btn-green.btn-lg.btn-block.font-weight-bold.text-uppercase(href=link) agregar al carrito
+mixin product-card-lg(img="producto1.jpg", title="Titulo", price="1,000.00", link="#")
+   .col-lg-8
+      img.img-fluid(src=`assets/img/${img}`, alt="")
+   .col-lg-4.text-center.p-4.info
+      h3.heading.mb-3 #{title}
+      if block
+         block
+      else 
+         p.desc SIN DESCRIPCION
+      p.price.font-weight-bold #{price}
+      a.btn.btn-green.btn-lg.btn-block.font-weight-bold.text-uppercase(href=link) agregar al carrito

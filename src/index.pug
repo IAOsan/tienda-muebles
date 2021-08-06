@@ -1,0 +1,45 @@
+extends ./pug/templates/template
+block home
+   main
+      .container-fluid.bg-img.bg-img-1
+      section.categories.py-5
+         h2.heading-main.heading-main-2.text-center.mb-4 Categorías
+         .container
+            .row.px-3.px-lg-0
+               .col-md-4.mb-5.mb-md-0
+                  +category-card('categoria1.jpg', 'Escritorios')
+               .col-md-4.mb-5.mb-md-0
+                  +category-card('categoria2.jpg', 'Hogar')
+               .col-md-4
+                  +category-card('categoria3.jpg', 'Cocina')
+      .container-fluid.about-us.bg-primary
+         .row.align-items-center
+            .col-lg-6.bg-img.bg-img-2
+            .col-lg-6.text-white.p-5
+               h2.heading-main.display-4.mb-4 Sobre Nosotros
+               p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam porro minima dignissimos, modi maiores molestiae iure ab doloribus ratione consequatur enim odio facere facilis veritatis provident magnam veniam nemo voluptatibus, neque excepturi distinctio libero error sit reiciendis. Ipsam repudiandae, unde asperiores, blanditiis sapiente aperiam suscipit corporis in molestiae tempora harum.
+               p Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aspernatur impedit ut atque eligendi consequatur cumque voluptates praesentium delectus nisi mollitia non illo numquam ipsa reiciendis, debitis quam quaerat tempora.
+      section.products.py-5
+         h2.heading-main.heading-main-2.text-center Nuestros Productos
+         .container.mt-5
+            .row.align-items-center.text-white.no-gutters.bg-primary.product
+               +product-card-lg('producto1.jpg', 'Nombre 1', '1,000.00', '#')
+                  p.desc Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis enim ex iure? Quasi, inventore quia?
+            .row.my-4.text-center.text-white
+               .col-md-6.mb-4.mb-md-0.product
+                  +product-card-sm('producto2.jpg', 'Nombre 2', '1,500.00', '#')
+                     p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo quaerat omnis porro necessitatibus, maxime ad pariatur facere perferendis cum.
+               .col-md-6.product
+                  +product-card-sm('producto3.jpg', 'Nombre 3', '1,500.00', '#')
+                     p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo quaerat omnis porro necessitatibus, maxime ad pariatur facere perferendis cum.
+            .row.justify-content-center.text-white
+               .col-md-6.col-lg-4.mb-4.mb-lg-0.product
+                  +product-card-sm('producto4.jpg', 'Nombre 4', '2,500.00', '#')
+                     p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo quaerat omnis porro necessitatibus, maxime ad pariatur facere perferendis cum.
+               .col-md-6.col-lg-4.mb-4.mb-lg-0.product
+                  +product-card-sm('producto5.jpg', 'Nombre 5', '1,200.00', '#')
+                     p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo quaerat omnis porro necessitatibus, maxime ad pariatur facere perferendis cum.
+               .col-md-6.col-lg-4.product
+                  +product-card-sm('producto6.jpg', 'Nombre 6', '3,000.00', '#')
+                     p.desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illo quaerat omnis porro necessitatibus, maxime ad pariatur facere perferendis cum.
+   

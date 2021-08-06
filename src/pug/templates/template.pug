@@ -1,0 +1,89 @@
+include ../mixins/mixins
+doctype html
+html(lang='es')
+   head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(http-equiv='X-UA-Compatible' content='ie=edge')
+      link(rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" sizes="any")
+      meta(name="description", content="Tienda con todo tipo de muebles para el hogar u oficina")
+      meta(name="keywords", content="Tienda, Virtual, Muebles, Escritorio, Hogar, Cocina")
+      //- fonts
+      link(rel="preconnect" href="https://fonts.googleapis.com")
+      link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet")
+      //- bootstrap
+      link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css')
+      link(rel='stylesheet' href='css/main.css')
+      title Tienda muebles
+   body
+      header.header
+         h1.heading-main.logo.text-center.pt-5.pb-3
+            |Tienda
+            span Muebles
+         .navigation
+            .container
+               nav.navbar.navbar-light.navbar-expand-lg.justify-content-center
+                  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-nav" aria-expanded="false" aria-label="Mostrar navegacion")
+                     //- span.navbar-toggler-icon
+                     .icon-box
+                        span.icon-navbar
+                  #main-navbar.collapse.navbar-collapse.pt-3.pt-lg-0
+                     ul.navbar-nav.w-100.justify-content-between.text-center
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") inicio
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") nosotros
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") tienda
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") blog
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") galeria
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") contacto
+      block home
+      footer.border.py-4
+         .container
+            .row.text-center.text-md-left
+               .col-md-4.mb-4.mb-md-0
+                  h3.heading-main Categorias
+                  nav.navbar.navbar-light
+                     ul.navbar-nav.w-100
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") carreras
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") prensa y noticias
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") asociaciones
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") politica de privacidad
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") términos de servicio
+               .col-md-4.mb-4.mb-md-0
+                  h3.heading-main Nosotros
+                  nav.navbar.navbar-light
+                     ul.navbar-nav.w-100
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") carreras
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") prensa y noticias
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") asociaciones
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") politica de privacidad
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") términos de servicio
+               .col-md-4.mb-4.mb-md-0
+                  h3.heading-main Soporte
+                  nav.navbar.navbar-light
+                     ul.navbar-nav.w-100
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") preguntas frecuentes
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") ayuda en línea
+                        li.nav-item
+                           a.nav-link.text-capitalize(href="#") confianza y seguridad
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js')
